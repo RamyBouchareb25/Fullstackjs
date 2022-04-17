@@ -90,15 +90,15 @@
                 </p>
                 <div class="abt-container">
                     <div class="abt-containers">
-                        <h3>00</h3>
+                        <h3 class="h3">00</h3>
                         <p>DAYS EVENT</p>
                     </div>
                     <div class="abt-containers">
-                        <h3>00</h3>
+                        <span class="counting-numbers"><h3>00</h3>++</span>
                         <p>CONFRENCES</p>
                     </div>
                     <div class="abt-containers">
-                        <h3>00</h3>
+                        <span class="counting-numbers"><h3>00</h3>++</span>
                         <p>WORKSHOPS</p>
                     </div>
                 </div>
@@ -321,6 +321,51 @@
                 </div>
             </div>
         </section>
+        <section id="Workshop">
+            <div class="top-div">
+                <h2>Workshops</h2>
+                <a href="/Speakers" class="button secondary">
+                    Veiw all Workshops
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="workshops owl-carousel-3 owl-carousel">
+                <div class="workshop">
+                    <div class="workshop-visual">
+                        <img class="workshop-img" src="images/Adobe_Illustrator_CC_icon.svg" alt="workshop" />
+                    </div>
+                    <h5>Design Concept</h5>
+                    <p>This training is made by... for... some other details bla bla bla <a href="">read more ...</a href=""></p>
+                </div>
+                <div class="workshop">
+                    <div class="workshop-visual">
+                        <img class="workshop-img" src="images/Adobe_Illustrator_CC_icon.svg" alt="workshop" />
+                    </div>
+                    <h5>Design Concept</h5>
+                    <p>This training is made by... for... some other details bla bla bla <a href="">read more ...</a href=""></p>
+                </div>
+                <div class="workshop">
+                    <div class="workshop-visual">
+                        <img class="workshop-img" src="images/Adobe_Illustrator_CC_icon.svg" alt="workshop" />
+                    </div>
+                    <h5>Design Concept</h5>
+                    <p>This training is made by... for... some other details bla bla bla <a href="">read more ...</a href=""></p>
+                </div>
+                <div class="workshop">
+                    <div class="workshop-visual">
+                        <img class="workshop-img" src="images/Adobe_Illustrator_CC_icon.svg" alt="workshop" />
+                    </div>
+                    <h5>Design Concept</h5>
+                    <p>This training is made by... for... some other details bla bla bla <a href="">read more ...</a href=""></p>
+                </div>
+                <div class="workshop">
+                    <div class="workshop-visual">
+                        <img class="workshop-img" src="images/Adobe_Illustrator_CC_icon.svg" alt="workshop" />
+                    </div>
+                    <h5>Design Concept</h5>
+                    <p>This training is made by... for... some other details bla bla bla <a href="">read more ...</a href=""></p>
+                </div>
+        </section>
         <section id="Location">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6390.245082388981!2d2.9160600900650016!3d36.791612218421584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fbb0f0a1a0553%3A0x142aa2b0b465338f!2sAADL%20DJENAN%20NOUAR%20LOUZ!5e0!3m2!1sfr!2sdz!4v1647621376714!5m2!1sfr!2sdz"
@@ -439,6 +484,43 @@
                     },
                 },                
             });
+            $(".owl-carousel-3").owlCarousel({
+                responsiveClass:true,
+                responsive : {
+                    0:{
+                        items: 1,
+                        nav: false,
+                        loop: false,
+                        pullDrag: false,
+                        touchDrag: false,
+                        mouseDrag: false,
+                    },
+                    600: {
+                        items: 2,
+                        nav: true,
+                        loop: true,
+                        pullDrag: true,
+                        touchDrag: true,
+                        mouseDrag: true,
+                    },
+                    800:{
+                        items:3,
+                        nav: true,
+                        loop: true,
+                        pullDrag: true,
+                        touchDrag: true,
+                        mouseDrag: true,
+                    },
+                    1000: {
+                        items:4,
+                        nav: true,
+                        loop: true,
+                        pullDrag: true,
+                        touchDrag: true,
+                        mouseDrag: true,
+                    },
+                },
+            })
         });
     </script>        
     <script src="./index.js"></script>

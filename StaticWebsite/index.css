@@ -57,6 +57,17 @@ a {
     z-index: 300;
     animation: nav-bar normal .5s ease-in;
 }
+.counting-numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2.6em;
+    font-weight: 700;
+    font-family: var(--font2);
+    color: var(--pink);
+}
+
 @keyframes nav-bar{
     from{
         top: -7em;
@@ -283,8 +294,6 @@ h2 {
 }
 h3 {
     color: var(--secondary);
-    font-size: 2.6em;
-    font-weight: 700;
     font-family: var(--font2);
 }
 h5{
@@ -337,6 +346,10 @@ h6:hover {
 }
 .abt-container h3 {
     color: var(--pink);
+}
+.h3 {
+    font-size: 3.3em;
+    font-weight: 700;
 }
 
 /*-------- speakers ------------*/
@@ -475,6 +488,31 @@ h2 > span {
     to {
         opacity: 100%;
     }
+}
+/*------Workshops-----*/
+
+.workshop-img {
+    height: 20vh;
+    margin: 2em 0 4em 0;
+}
+.workshop {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    background-color: var(--dark);
+}
+.workshops.workshops .owl-nav button{
+    font-size: 5em;
+}
+.workshop > p {
+    font-size: 2.2ch;
+}
+.workshop > p > a {
+    text-decoration: none;
+    color: rgb(92, 4, 255);
+}
+.workshop > p > a:hover {
+    color: red;
 }
 /*------Sponsors------*/
 #Sponsors {
