@@ -2,19 +2,24 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" type="img/png" href="images/MC.svg">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/10ea1b7989.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./owl/owl.theme.default.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" type="img/png" href="images/MC.svg" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MC Design Fest</title>
 </head>
 
 <body>
-    <nav class="main-nav">
-        <a href="https://microclub.net"><img class="nav-logo" src="images/MC.svg"></a>
+    <nav id="nav" class="main-nav">
+        <a href="https://microclub.net"><img class="nav-logo" src="images/MC.svg" /></a>
         <ul class="main-nav-elements">
-            <li class="main-nav-element"><a href="https://microclub.net">Micro Club</a></li>
+            <li class="main-nav-element">
+                <a href="https://microclub.net">Micro Club</a>
+            </li>
             <li class="main-nav-element"><a href="#Home">Home</a></li>
             <li class="main-nav-element hover-container">
                 <a href="#Details">Details</a>
@@ -28,253 +33,415 @@
             </li>
             <li class="main-nav-element"><a href="#About">About</a></li>
             <li class="main-nav-element"><a href="#Contact">Contact</a></li>
-            <button class="main-button">register in the event</button>
+            <button class="button" id="register">
+                register in the event
+                <i class="fa fa-arrow-right"></i>
+            </button>
         </ul>
     </nav>
-    <header>
-        <section id="Home">
-            <h1>MICRO CLUB DESIGN FEST</h1>
-            <div>
-                <h4>12 OCTOBER 2021</h4>
-                <a href="#location">Confrence room usthb</a>
-                <a href="" class="secondary-button">register in the event</a>
-            </div>
-        </section>
+    <header id="Home">
+            <section>
+                <h1 id="title-info">MICRO CLUB DESIGN FEST</h1>
+                <div class="info">
+                    <h4>12 OCTOBER 2021</h4>
+                    <a class="conference" href="#location">Confrence room usthb</a>
+                    <a href="" class="button secondary">Discover More</a>
+                </div>
+            </section>
     </header>
+    <a href="#Home" class="fleche-container"><i id="fleche" class="fa-solid fa-arrow-up"></i></a>
     <main>
+        <section id="Form">
+            <form action="post">
+                <div class="form">
+                    <i class="fa-solid fa-xmark xmark" id="xmark"></i>
+                    <label class="registration" for="form">REGISTRATIONS</label>
+                    <div class="from-column1">
+                        <div class="form-row"><label for="First Name" class="first-name">First Name : </label><input class="input register" type="text"></div>
+                        <div class="form-row"><label for="Last Name" class="last-name">Last Name : </label><input class="input register" type="text"></div>
+                    </div>
+                    <div class="from-column2">
+                        <div class="form-row"><label for="email" class="e-mail"> E-mail : </label><input class="input register" type="email"></div>
+                        <div class="form-row"><label for="number" class="phone-number">Number : </label><input class="input register phone" type="number"></div>
+                    </div>
+                    <button class="button register-btn">Complete Registration</button>
+                </div>
+                </form>
+        </section>
         <section id="About">
             <div class="abt-sub">
                 <h2>ABOUT DESIGN FEST</h2>
-                <button class="main-button">register in the event</button>
+                <button class="button">
+                    register in the event
+                    <i class="fa fa-arrow-right"></i>
+                </button>
             </div>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, magnam totam? Nisi veniam quaerat,
-                porro ipsa nam illum dignissimos distinctio veritatis aliquam. Adipisci, quidem dolorum quod illum
-                atque quisquam enim.</p>
-            <div class="abt-container">
-                <div class="abt-containers">
-                    <h3>00</h3>
-                    <p>DAYS EVENT
-                    </p>
-                </div>
-                <div class="abt-containers">
-                    <h3>00</h3>
-                    <p>CONFRENCES</p>
-                </div>
-                <div class="abt-containers">
-                    <h3>00</h3>
-                    <p>WORKSHOPS</p>
+            <div class="abt-sub">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, magnam
+                    totam? Nisi veniam quaerat, porro ipsa nam illum dignissimos
+                    distinctio veritatis aliquam. Adipisci, quidem dolorum quod illum
+                    atque quisquam enim.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid temporibus nostrum molestias
+                    veniam! Iusto aliquam quia dolores harum commodi inventore molestias aspernatur quidem obcaecati, ex
+                    et, sunt facilis odit quam!
+                </p>
+                <div class="abt-container">
+                    <div class="abt-containers">
+                        <h3>00</h3>
+                        <p>DAYS EVENT</p>
+                    </div>
+                    <div class="abt-containers">
+                        <h3>00</h3>
+                        <p>CONFRENCES</p>
+                    </div>
+                    <div class="abt-containers">
+                        <h3>00</h3>
+                        <p>WORKSHOPS</p>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="Speakers">
             <div class="top-div">
                 <h2>Speakers</h2>
-                <a href="" class="secondary-button"> </a>
+                <a href="/Speakers" class="button secondary">
+                    Veiw all speakers
+                    <i class="fa fa-arrow-right"></i>
+                </a>
             </div>
-            <section id="Speakers">
-                <div class="top-div">
-                    <h2>Speakers</h2>
-                    <a href="/Speakers" class="secondary-button"
-                        >Veiw all speakers</a
-                    >
+            <div class="speakers owl-carousel-1 owl-carousel">
+                <div class="speaker">
+                    <div class="speaker-visual">
+                        <img class="speaker-img" src="images/xteam1.jpg" alt="" />
+                        <ul class="speaker-socials">
+                            <li class="speaker-social">
+                                <a href="https://www.facebook.com/Micro.Club.USTHB/"><i
+                                        class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="speaker-social">
+                                <a href="https://www.instagram.com/microclub_usthb/"><i
+                                        class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="speaker-social"><a href="https://www.linkedin.com/in/youcef-madadi-438a33170/"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h6>First LastName</h6>
+                    <p>Web Developer <span>@micro club</span></p>
                 </div>
-                <div class="speakers">
-                    <div class="speaker">
-                        <div class="speaker-visual">
-                            <img
-                                class="speaker-img"
-                                src="images/xteam1.jpg"
-                                alt=""
-                            />
-                            <ul class="speaker-socials">
-                                <li class="speaker-social">
-                                    <a
-                                        href="https://www.facebook.com/Micro.Club.USTHB/"
-                                        >Facebook</a
-                                    >
-                                </li>
-                                <li class="speaker-social">
-                                    <a
-                                        href="https://www.instagram.com/microclub_usthb/"
-                                        >Instgram</a
-                                    >
-                                </li>
-                                <li class="speaker-social">
-                                    <a
-                                        href="https://www.linkedin.com/in/youcef-madadi-438a33170/"
-                                        >linkedin</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                        <h6>First LastName</h6>
-                        <p>Web Developer <span>@micro club</span></p>
+                <div class="speaker">
+                    <div class="speaker-visual">
+                        <img class="speaker-img" src="images/xteam1.jpg" alt="" />
+                        <ul class="speaker-socials">
+                            <li class="speaker-social">
+                                <a href="https://www.facebook.com/Micro.Club.USTHB/"><i
+                                        class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="speaker-social">
+                                <a href="https://www.instagram.com/microclub_usthb/"><i
+                                        class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="speaker-social"><a href="https://www.linkedin.com/in/youcef-madadi-438a33170/"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="speaker">
-                        <div class="speaker-visual">
-                            <img
-                                class="speaker-img"
-                                src="images/xteam1.jpg"
-                                alt=""
-                            />
-                            <ul class="speaker-socials">
-                                <li class="speaker-social">
-                                    <a
-                                        href="https://www.facebook.com/Micro.Club.USTHB/"
-                                        >Facebook</a
-                                    >
-                                </li>
-                                <li class="speaker-social">
-                                    <a
-                                        href="https://www.instagram.com/microclub_usthb/"
-                                        >Instgram</a
-                                    >
-                                </li>
-                                <li class="speaker-social">
-                                    <a
-                                        href="https://www.linkedin.com/in/youcef-madadi-438a33170/"
-                                        >linkedin</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                        <h6>First LastName</h6>
-                        <p>Web Developer <span>@micro club</span></p>
-                    </div>
-                    <div class="speaker">
-                        <div class="speaker-visual">
-                            <img
-                                class="speaker-img"
-                                src="images/xteam1.jpg"
-                                alt=""
-                            />
-                            <ul class="speaker-socials">
-                                <li class="speaker-social">
-                                    <a
-                                        href="https://www.facebook.com/Micro.Club.USTHB/"
-                                        >Facebook</a
-                                    >
-                                </li>
-                                <li class="speaker-social">
-                                    <a
-                                        href="https://www.instagram.com/microclub_usthb/"
-                                        >Instgram</a
-                                    >
-                                </li>
-                                <li class="speaker-social">
-                                    <a
-                                        href="https://www.linkedin.com/in/youcef-madadi-438a33170/"
-                                        >linkedin</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                        <h6>First LastName</h6>
-                        <p>Web Developer <span>@micro club</span></p>
-                    </div>
-                    <div class="speaker">
-                        <div class="speaker-visual">
-                            <img
-                                class="speaker-img"
-                                src="images/xteam1.jpg"
-                                alt=""
-                            />
-                            <ul class="speaker-socials">
-                                <li class="speaker-social">
-                                    <a
-                                        href="https://www.facebook.com/Micro.Club.USTHB/"
-                                        >Facebook</a
-                                    >
-                                </li>
-                                <li class="speaker-social">
-                                    <a
-                                        href="https://www.instagram.com/microclub_usthb/"
-                                        >Instgram</a
-                                    >
-                                </li>
-                                <li class="speaker-social">
-                                    <a
-                                        href="https://www.linkedin.com/in/youcef-madadi-438a33170/"
-                                        >linkedin</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                        <h6>First LastName</h6>
-                        <p>Web Developer <span>@micro club</span></p>
-                    </div>
+                    <h6>First LastName</h6>
+                    <p>Web Developer <span>@micro club</span></p>
                 </div>
-            </section>
-        <section class="details">
-            <div class="details">
-                <img class="details-img" src="images/Celeb.jpg" alt="">
-                <div>
-                    <h2>A MICRO CLUB<span>CELEBRATION OF DESIGN</span></h2>
-                    <p>Dolor sit amet, consectetur adipisicing elit. Commodi, vel omnis repellendus mollitia, explicabo,
-                        maiores quisquam numquam quia reiciendis sit, accusantium atque ex animi perspiciatis ab odit
-                        earum assumenda aliquid santium atque ex animi.</p>
-                    <p>Dolor sit amet, consectetur adipisicing elit. Commodi, vel omnis repellendus mollitia, explicabo,
-                        maiores quisquam numquam quia reiciendis sit, accusantium atque ex animi perspiciatis ab odit
-                        earum assumenda aliquid santium atque ex animi.</p>
+                <div class="speaker">
+                    <div class="speaker-visual">
+                        <img class="speaker-img" src="images/xteam1.jpg" alt="" />
+                        <ul class="speaker-socials">
+                            <li class="speaker-social">
+                                <a href="https://www.facebook.com/Micro.Club.USTHB/"><i
+                                        class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="speaker-social">
+                                <a href="https://www.instagram.com/microclub_usthb/"><i
+                                        class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="speaker-social"><a
+                                    href="https://www.linkedin.com/in/youcef-madadi-438a33170/"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h6>First LastName</h6>
+                    <p>Web Developer <span>@micro club</span></p>
+                </div>
+                <div class="speaker">
+                    <div class="speaker-visual">
+                        <img class="speaker-img" src="images/xteam1.jpg" alt="" />
+                        <ul class="speaker-socials">
+                            <li class="speaker-social">
+                                <a href="https://www.facebook.com/Micro.Club.USTHB/"><i
+                                        class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="speaker-social">
+                                <a href="https://www.instagram.com/microclub_usthb/"><i
+                                        class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="speaker-social"><a
+                                    href="https://www.linkedin.com/in/youcef-madadi-438a33170/"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h6>First LastName</h6>
+                    <p>Web Developer <span>@micro club</span></p>
                 </div>
             </div>
         </section>
-        <section id="Schedual">
-            <h2></h2>
-            <div class="schedual-table">
-                <nav class="schedual-nav">
-                    <a href="#schedual-day1">12th</a>
-                    <a href="#schedual-day2">13th</a>
-                    <a href="#schedual-day3">14th</a>
+        <section id="Details">
+                <img class="details-img" src="images/Celeb.jpg" alt="" />
+                <div class="right-details">
+                    <h2>A MICRO CLUB <span>CELEBRATION OF DESIGN</span></h2>
+                    <p>
+                        Dolor sit amet, consectetur adipisicing elit. Commodi, vel omnis
+                        repellendus mollitia, explicabo, maiores quisquam numquam quia
+                        reiciendis sit, accusantium atque ex animi perspiciatis ab odit
+                        earum assumenda aliquid santium atque ex animi.
+                    </p>
+                    <p>
+                        Dolor sit amet, consectetur adipisicing elit. Commodi, vel omnis
+                        repellendus mollitia, explicabo, maiores quisquam numquam quia
+                        reiciendis sit, accusantium atque ex animi perspiciatis ab odit
+                        earum assumenda aliquid santium atque ex animi.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="Schedule">
+            <h2>Schedule</h2>
+            <div class="schedule-table">
+                <nav class="schedule-nav">
+                    <a href="#Schedule" id="first-day">12th Oct</a>
+                    <a href="#Schedule" id="second-day">13th Oct</a>
+                    <a href="#Schedule" id="third-day">14th Oct</a>
                 </nav>
-                <div class="schedual-content">
-                    <div class="schedual-day"></div>
-                    <div class="schedual-day"></div>
-                    <div class="schedual-day"></div>
+                <div class="schedule-content">
+                    <div class="schedule-day visible" id="schedule-day1">
+                        <div class="schedule-content-element">
+                            <div class="schedule-time-content">
+                                <h5>Registration And Breakfast</h5>
+                                <ul>
+                                    <li>Name Last Name</li>
+                                </ul>
+                            </div>
+                            <h5 class="schedule-time">08:00 AM</h5>
+                        </div>
+                        <div class="schedule-content-element">
+                            <div class="schedule-time-content">
+                                <h5>Registration And Breakfast</h5>
+                                <ul>
+                                    <li>Name Last Name</li>
+                                    <li>Name Last Name</li>
+                                </ul>
+                            </div>
+                            <h5 class="schedule-time">10:00 AM</h5>
+                        </div>
+                        <div class="schedule-content-element">
+                            <div class="schedule-time-content">
+                                <h5>Registration And Breakfast</h5>
+                                <ul>
+                                    <li>Name Last Name</li>
+                                    <li>Name Last Name</li>
+                                </ul>
+                            </div>
+                            <h5 class="schedule-time">01:00 PM</h5>
+                        </div>
+                    </div>
+                    <div class="schedule-day" id="schedule-day2">
+                        <div class="schedule-content-element">
+                            <div class="schedule-time-content">
+                                <h5>Registration And Breakfast</h5>
+                                <ul>
+                                    <li>Name Last Name</li>
+                                </ul>
+                            </div>
+                            <h5 class="schedule-time">03:00 PM</h5>
+                        </div>
+                        <div class="schedule-content-element">
+                            <div class="schedule-time-content">
+                                <h5>Registration And Breakfast</h5>
+                                <ul>
+                                    <li>Name Last Name</li>
+                                    <li>Name Last Name</li>
+                                </ul>
+                            </div>
+                            <h5 class="schedule-time">08:00 AM</h5>
+                        </div>
+                        <div class="schedule-content-element">
+                            <div class="schedule-time-content">
+                                <h5>Registration And Breakfast</h5>
+                                <ul>
+                                    <li>Name Last Name</li>
+                                    <li>Name Last Name</li>
+                                </ul>
+                            </div>
+                            <h5 class="schedule-time">10:00 AM</h5>
+                        </div>
+                    </div>
+                    <div class="schedule-day" id="schedule-day3">
+                        <div class="schedule-content-element">
+                            <div class="schedule-time-content">
+                                <h5>Registration And Breakfast</h5>
+                                <ul>
+                                    <li>Name Last Name</li>
+                                </ul>
+                            </div>
+                            <h5 class="schedule-time">01:00 PM</h5>
+                        </div>
+                        <div class="schedule-content-element">
+                            <div class="schedule-time-content">
+                                <h5>Registration And Breakfast</h5>
+                                <ul>
+                                    <li>Name Last Name</li>
+                                    <li>Name Last Name</li>
+                                </ul>
+                            </div>
+                            <h5 class="schedule-time">03:00 PM</h5>
+                        </div>
+                        <div class="schedule-content-element">
+                            <div class="schedule-time-content">
+                                <h5>Registration And Breakfast</h5>
+                                <ul>
+                                    <li>Name Last Name</li>
+                                    <li>Name Last Name</li>
+                                </ul>
+                            </div>
+                            <h5 class="schedule-time">08:00 AM</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="Location">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6390.245082388981!2d2.9160600900650016!3d36.791612218421584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fbb0f0a1a0553%3A0x142aa2b0b465338f!2sAADL%20DJENAN%20NOUAR%20LOUZ!5e0!3m2!1sfr!2sdz!4v1647621376714!5m2!1sfr!2sdz"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
         </section>
     </main>
 
     <footer>
         <section id="Sponsors">
             <h2>Sponsors</h2>
-            <div>
-                <img src="images/brand4.png" alt="">
-                <img src="images/brand4.png" alt="">
-                <img src="images/brand4.png" alt="">
+            <div class ="sponsor owl-carousel" id="owl-carousel-2">
+                <div class="sponsor-div"><img src="images/brand1.png" alt="" /></div>
+                <div class="sponsor-div"><img src="images/brand2.png" alt="" /></div>
+                <div class="sponsor-div"><img src="images/brand3.png" alt="" /></div>
+                <div class="sponsor-div"><img src="images/brand4.png" alt="" /></div>
+                <div class="sponsor-div"><img src="images/brand1.png" alt="" /></div>
+                <div class="sponsor-div"><img src="images/brand2.png" alt="" /></div>
+                <div class="sponsor-div"><img src="images/brand3.png" alt="" /></div>
+                <div class="sponsor-div"><img src="images/brand4.png" alt="" /></div>
             </div>
         </section>
         <section id="Contact">
             <div class="contact-parts">
-                <img src="images/MC.svg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facilis! Quia mollitia esse quae
-                    doloremque, quo fugiat explicabo, labore placeat architecto doloribus sit ut inventore dicta iusto
-                    accusamus quos veniam!</p>
+                <img class="mc-logo" src="images/MC.svg" alt="MClogo" />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                    facilis! Quia mollitia esse quae doloremque, quo fugiat explicabo,
+                    labore placeat architecto doloribus sit ut inventore dicta iusto
+                    accusamus quos veniam!
+                </p>
             </div>
-            <div class="contact-parts">
+            <div class="contact-parts special">
                 <h5>Contact us</h5>
-                <a href="#location">Confrence room usthb</a>
-                <a href="mailto:ramybouchareb@outlook.com">ramybouchareb@outlook.com</a>
-                <a href="tel:+2130559894496"> 0559894496</a>
+                <a href="#location">Confrence room usthb</a><br>
+                <a href="mailto:microclub@usthb.dz">microclub@usthb.dz</a><br>
+                <a class="tel" href="tel:+2130559894496"> (+213)559894496</a>
             </div>
             <div class="contact-parts">
                 <h5>Subscribe to the newsletter</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam beatae minus quisquam hic, excepturi
-                    asperiores accusamus, mollitia quo maxime minima sit fugit, consequatur non eius veniam accusantium
-                    qui similique eos.</p>
-                    <input class="input" type="email" name="email"/>
-                <button class="main-button" id="subscribe"> Subscribe for mor details</button>
-            <hr>
-                    <p>Copyright ©2021 All rights reserved<a href="https://microclub.net">@microclub</a></p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam beatae
+                    minus quisquam hic, excepturi asperiores accusamus, mollitia quo
+                    maxime minima sit fugit, consequatur non eius veniam accusantium qui
+                    similique eos.
+                </p>
+                <input class="input" type="email" name="email" />
+                <button class="button" id="subscribe">
+                    Subscribe for mor details
+                    <i class="fa fa-arrow-right"></i>
+                </button>
             </div>
         </section>
+        <section id="Copyright">
+        <hr />
+        <p>
+            Copyright ©2021 All rights reserved <a href="https://microclub.net">@microclub</a>
+        </p></section>
     </footer>
+    <script src="./owl/jquery-3.6.0.min.js"></script>
+    <script src="./owl/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel-1").owlCarousel({
+                responsiveClass: true,
+                responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                loop: false,
+                pullDrag: false,
+                touchDrag: false,
+                mouseDrag: false,
+            },
+            600: {
+                items: 2,
+                nav: true,
+                loop: true,
+                pullDrag: true,
+                touchDrag: true,
+                mouseDrag: true,
+            },
+            800: {
+                items: 3,
+                nav: true,
+                loop: true,
+                pullDrag: true,
+                touchDrag: true,
+                mouseDrag: true,
+            },
+            1000: {
+                nav:true,
+                items:4,
+            }
+        },
+            });
+            $("#owl-carousel-2").owlCarousel({
+                nav:false,
+                loop:true,
+                autoplay:true,
+                autoplayTimeout:1000,
+                autoplayHoverPause:true,
+                dots:false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 3,
+                    },
+                    600: {
+                        items: 4,
+                    },
+                    800: {
+                        items: 6,
+                    },
+                    1000: {
+                        items: 7,
+                    },
+                },                
+            });
+        });
+    </script>        
+    <script src="./index.js"></script>
 </body>
 
 </html>
