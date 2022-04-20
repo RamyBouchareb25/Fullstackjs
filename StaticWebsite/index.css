@@ -330,6 +330,9 @@ h6:hover {
     flex-direction: row;
     margin: 3em 0;
 }
+.About {
+    flex-wrap: wrap;
+} 
 .abt-sub {
     width: 50%;
 }
@@ -367,8 +370,11 @@ h6:hover {
 .speaker-social .social-icons {
     height: 2.5em;
 }
-.speaker-socials .speaker-social {
+.speaker-socials .speaker-social > a > i {
     background-color: var(--pink);
+    padding: 0.7em 0.8em;
+    border-radius: 2em;
+    color: #fff;
 }
 
 .speaker {
@@ -435,10 +441,11 @@ p > span {
     justify-content: space-between;
 }
 #Details > img {
-    width: 50%;
+    width: 30em;
 }
 .right-details {
-    width: 40%;
+    max-width: 40%;
+    min-width: 26em;
 }
 h2 > span {
     color: var(--primary);
@@ -464,6 +471,11 @@ h2 > span {
     border-bottom: 3px rgba(255, 189, 0, 0) solid;
 }
 .schedule-nav > a:hover{
+    cursor:pointer;
+    color: var(--primary);
+    border-bottom: 3px rgba(255, 189, 0,100%) solid;
+}
+.schedule-nav > a.active{
     cursor:pointer;
     color: var(--primary);
     border-bottom: 3px rgba(255, 189, 0,100%) solid;
@@ -568,6 +580,9 @@ h2 > span {
 #subscribe {
     width: 100%;
 }
+.mc-text {
+    min-width: 16em;
+}
 /*------- copyright -------*/
 #Copyright {
     display: inherit;
@@ -577,6 +592,46 @@ h2 > span {
     margin: auto;
 }
 /*------ media queries -------*/
-@media only screen and (max-width: 700px) {
-    
+@media only screen and (max-width: 1100px) {
+
+    .abt-sub {
+        width: 100%;
+    }
+    .details-img {
+        width: var(--width)!important;
+        height: var(--width);
+        --width: 20em;
+    }
+    .right-details {
+        --max-width: 18em;
+        max-width: var(--max-width);
+        min-width: var(--max-width);
+    }
+    #Details {
+        justify-content: space-around;
+    }
+    #Contact {
+        flex-wrap: wrap;
+    }
+    .subscribe {
+        width: 100%;
+    }
+    .special {
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 810px) {
+    section {
+        padding: 0 1em !important;
+    }
+    #Details {
+        flex-wrap: wrap;
+    }
+    .details-img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .right-details {
+        max-width: 100% !important;
+    }
 }
