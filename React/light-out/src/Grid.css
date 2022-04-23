@@ -1,0 +1,6 @@
+.Container {
+    display: flex;
+    flex-direction: column ;
+    height: 63vh;
+    justify-content: space-between;
+}
